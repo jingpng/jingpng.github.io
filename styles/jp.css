@@ -1,0 +1,106 @@
+.tab {
+  overflow: hidden;
+  background-color: black;
+  padding: 6px 12px;
+
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  height: 60px;
+}
+
+.body {
+  background-image: url('../images/background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.container {
+  padding: 30px 30px; /*1. Top & Bottom 2. Left & Right*/
+  position: relative;
+}
+
+.addMonitorBtn {
+  color: red;
+  border:none;
+  border-style: dashed;
+  border-color: red;
+  background: none;
+  outline: none;
+  background-color: yellow;
+  padding: 30px;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.addMonitorBtn:focus {
+  outline: none;
+}
+
+.formCard {
+  border:none;
+  border-style: solid;
+  border-color: red;
+  background: none;
+  outline: none;
+  background-color: yellow;
+  padding: 10px;
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.searchBtn {
+  border-radius: 10px;
+}
+
+/* Style the close button (span) */
+.closeBtn {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: yellow;
+  border: none;
+  color: black;
+}
+
+.closeBtn:hover {
+  background: black;
+  color: white;
+  border-radius: 15px;
+}
+
+.col-sm-6 {
+  padding: 10px;
+}
+
+.loader {
+  visibility: hidden;
+  border: 6px solid #f3f3f3; /* Light grey */
+  border-top: 6px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  animation: spin 2s linear infinite;
+  display: inline-block;
+  margin-left: 10px;
+  margin-bottom: -5px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+/* .loader.show {
+  visibility: visible;
+} */
