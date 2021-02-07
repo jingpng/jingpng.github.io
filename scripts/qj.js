@@ -17,7 +17,7 @@ async function graphdata(queue_id, htmlNum) {
   date = new Date().addHours(8).addMinutes(-3).toISOString()
   // get the date to be the same format as the required params
   date = date.substring(0, date.length - 5) + "%2B08:00"
-  url = "http://localhost:8080/company/arrival_rate?queue_id=" + queue_id + "&from=" + date + "&duration=3"
+  url = "https://ades-2b01.herokuapp.com/company/arrival_rate?queue_id=" + queue_id + "&from=" + date + "&duration=3"
   console.log(url)
   try {
     const response = await fetch(url);
