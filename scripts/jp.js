@@ -47,7 +47,7 @@ function deleteMonitor(htmlNum) {
 }
 
 //make sure backend has started or typeerror: failed to fetch would occur when searching 
-const host = "http://localhost:8080";
+const host = "https://ades-2b01.herokuapp.com";
 
 async function getQueueData(companyid) {
   try {
